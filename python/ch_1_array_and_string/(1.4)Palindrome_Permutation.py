@@ -2,26 +2,6 @@
 # drome. A palindrome is a word or phrase that is the same forwards and backwards. A permutation
 # is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.
 
-#
-# def palindromePermutation(s):
-#     map={}
-#     c=0
-#     for i in s:
-#         if i != ' ':
-#             if i in map.keys():
-#                 map[i]+=1
-#             else:
-#                 map[i]=1
-#         print(map)
-#     for i in map.keys():
-#         if map[i]%2 == 0:
-#             c+=1
-#
-#     if c == len(map)-1 :
-#         return 1
-#     else:
-#         return 0
-
 
 def checkMaxOneOdd(map):
     foundOdd = False

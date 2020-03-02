@@ -3,25 +3,6 @@
 # length of the string. (Note: If implementing in Java, please use a character array so that you can
 # perform this operation in place.)
 
-# my thinking
-
-# def URLify(s):
-#     l=[]
-#     for i in s:
-#         if i != ' ':
-#             l.append(i)
-#         else:
-#             l.append('%20')
-#     return ''.join(l)
-#
-# if __name__ == '__main__':
-#     print(URLify(input()))
-#
-
-#####################################
-
-# what question whats
-
 # Maximum length of string after modifications.
 MAX = 1000
 
