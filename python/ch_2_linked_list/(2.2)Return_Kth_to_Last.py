@@ -1,9 +1,10 @@
-# Write code to remove duplicates from an unsorted linked list.
+# Implement an algorithm to find the kth to last element of a singly linked list.
+
 
 class Node:
     def __init__(self, data):
         self.data = data
-        self.next = None
+        self.next = next
 
 
 class LinkedList:
@@ -25,15 +26,7 @@ class LinkedList:
             print(curr.data)
             curr = curr.next
 
-    def removeDups(self):
-        current = second = self.head
-        while current is not None:
-            while second.next is not None:
-                if second.next.data == current.data:
-                    second.next = second.next.next
-                else:
-                    second = second.next
-            current = second = current.next
+
 
 
 if __name__ == "__main__":
@@ -42,7 +35,4 @@ if __name__ == "__main__":
     ll.makeNode(2)
     ll.makeNode(1)
     ll.makeNode(4)
-    ll.printLinkedList()
-    ll.removeDups()
-    print("-----------------")
     ll.printLinkedList()
