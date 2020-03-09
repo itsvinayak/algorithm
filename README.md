@@ -1,6 +1,6 @@
-<h1 align="center">cracking the codeing interview</h1>
+<h1 align="center">cracking the coding interview</h1>
 
-solution for book  "cracking the codeing interview"
+solution for book  "cracking the coding interview"
 
 
 <center>
