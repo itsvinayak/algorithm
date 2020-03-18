@@ -20,5 +20,12 @@ jobs:
     - name: running
       run: |
         python index.py
-        
+        git config --global user.name github-actions
+        git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+    - name: Update README.md
+      run: |
+        git add README.md
+        git commit -am "updating README.md" ||  true
+        git push --force origin HEAD:$GITHUB_REF || true
 
