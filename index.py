@@ -17,5 +17,5 @@ for list in os.walk('.',topdown=True):
         for line in list[2]:
             file.writelines(' <li><a href=" ' + line +'" >'+ os.path.basename(line) + '</a></li>')
         file.writelines("</ul>")
-        file.writelines('<hr/>')
+        file.writelines('<br/>')
 file.close()
