@@ -14,8 +14,8 @@ for list in os.walk('.',topdown=True):
         file.writelines('<h2>' + ' --> '.join(list[0].split('/')[1:]) +'</h2>')
         file.writelines('<br/>')
         file.writelines("<ul>")
-        for line in list[2]:
-            file.writelines(' <li><a href=" ' + line +'" >'+ os.path.basename(line) + '</a></li>')
+        for dir in list[2]:
+            file.writelines(' <li><a href=" .' + list[0][1:] +' " >'+ os.path.basename(dir) + '</a></li>')
         file.writelines("</ul>")
         file.writelines('<br/>')
 file.close()
