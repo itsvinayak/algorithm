@@ -1,14 +1,14 @@
- #   {1,2} == total no. of PowerSet is 2**n, where n in no. of element
- #
- #     {}
- #      |
- #     / \
- #    {1} {}    |
- #     |   |
- #    / \   \
- #   {1,2}  {2}
- #
- #
+#   {1,2} == total no. of PowerSet is 2**n, where n in no. of element
+#
+#     {}
+#      |
+#     / \
+#    {1} {}    |
+#     |   |
+#    / \   \
+#   {1,2}  {2}
+#
+#
 
 #
 #
@@ -34,5 +34,5 @@ def PowerSet(s):
             subset.append(s[j])
 
 
-if __name__ == '__main__':
-    PowerSet({1,2})
+if __name__ == "__main__":
+    PowerSet({1, 2})

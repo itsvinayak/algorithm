@@ -27,8 +27,6 @@ class LinkedList:
             curr = curr.next
 
 
-
-
 if __name__ == "__main__":
     ll = LinkedList()
     ll.makeNode(1)
