@@ -10,29 +10,18 @@
 #
 #
 
-#
-#
-# def PowerSet(s):
-#     subset = []
-#     helper(list(s),subset,0)
-#
-# def helper(s,subset,i):
-#     if i == len(s)-1:
-#         print(subset)
-#     else:
-#         helper(s,subset,i+1)
-#         print('--> ',i)
-#         subset.append(s[i])
-#         helper(s,subset,i+1)
 
+def PowerSet(s,subset,index):
 
-def PowerSet(s):
-    subset = [{}]
-    s = lsit(s)
-    for i in range(len(s)):
-        for j in range(i):
-            subset.append(s[j])
+      if index == len(s):
+        print(subset)
+        return
+      print(s[index])
+      print("-> ", index)
+      PowerSet(s, subset.append(s[index-1]), index + 1)
+      PowerSet(s, subset, index + 1)
+
 
 
 if __name__ == "__main__":
-    PowerSet({1, 2})
+    PowerSet([1,2,3],[],0)
