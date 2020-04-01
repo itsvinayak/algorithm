@@ -16,14 +16,37 @@ class LinkedList:
             while curr.next:
                 curr = curr.next
             curr.next = Node(data)
-            
+        return self.head
+
     def printLinkedList(self, node):
         if node is not None:
-            print(node.val)
-            ll.printLinkedList(node.next) 
-    
-    def FindSum(self):
+            print(node.data,end='--> ')
+            self.printLinkedList(node.next)
+       
+    def SumList(l1,l2,carry):
+        pass
 
-    def MakeDigit(self):
 
-    def 
+          
+
+
+if __name__ == "__main__":
+    l1 = LinkedList()
+    l2 = LinkedList()
+    l3 = LinkedList()
+        
+
+    head1 = l1.makeNode(7)
+    head2 = l2.makeNode(5)
+     
+    l1.makeNode(1)
+    l1.makeNode(6)
+
+    l2.makeNode(9)
+    l2.makeNode(2)
+ 
+    print("Gven Linked List ")
+    l1.printLinkedList(head1)
+    print('null')
+    l2.printLinkedList(head2)
+    print('null')
