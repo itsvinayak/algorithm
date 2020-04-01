@@ -21,3 +21,4 @@ def isRotation(s1: str, s2: str) -> int:
 
 if __name__ == "__main__":
     print(isRotation("waterbottle", "erbottlewat"))
+
