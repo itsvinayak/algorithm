@@ -23,9 +23,9 @@ class LinkedList:
             print(node.val)
             ll.printLinkedList(node.next)
 
-# Deletes middle node
+    # Deletes middle node
     def deleteMiddleElement(self):
-        #Base cases
+        # Base cases
         if self.head == None:
             return None
         if self.head.next == None:
@@ -43,7 +43,7 @@ class LinkedList:
         prev.next = slow.next
 
 
-#Drier program to test above function
+# Drier program to test above function
 if __name__ == "__main__":
     ll = LinkedList()
     head = ll.makeNode(1)
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     print("Gven Linked List ")
     ll.printLinkedList(head)
     ll.deleteMiddleElement()
-    print('Linked List after deletion of middle')
+    print("Linked List after deletion of middle")
     ll.printLinkedList(head)
 
 # by vinayak

@@ -9,19 +9,19 @@ def recursiveUnboundedKnapsack(val, wt, W, n):
             recursiveUnboundedKnapsack(val, wt, W, n - 1),
         )
 
-def unboundedKnapsackDp(val,wt,W,n):
-    dp = [[None for _ in range(W+1)] for _ in range(n+1)]
 
-    for i in range(n+1):
-        for j in range(W+1):
+def unboundedKnapsackDp(val, wt, W, n):
+    dp = [[None for _ in range(W + 1)] for _ in range(n + 1)]
+
+    for i in range(n + 1):
+        for j in range(W + 1):
             if i == 0 or W == 0:
                 return 0
-            elif wt[i-1] > j:
-                dp[i][j] = dp[i-1][j]
+            elif wt[i - 1] > j:
+                dp[i][j] = dp[i - 1][j]
             else:
-                dp[i][j] = max(val[i-1] + dp[i-1][j-wt[i-1]],dp[i-1][j])
+                dp[i][j] = max(val[i - 1] + dp[i - 1][j - wt[i - 1]], dp[i - 1][j])
     return dp[n][W]
-
 
 
 if __name__ == "__main__":
@@ -30,5 +30,4 @@ if __name__ == "__main__":
     n = 3
     W = 45
     print(recursiveUnboundedKnapsack(val, wt, W, n))
-    print(unboundedKnapsackDp(val,wt,W,n))
-    
+    print(unboundedKnapsackDp(val, wt, W, n))

@@ -9,6 +9,7 @@ def OptimumOperationRec(n):
     else:
         return 1 + OptimumOperationRec(n - 1)
 
+
 def OptimumOperationMemo(n):
     if n == 0:
         return 0

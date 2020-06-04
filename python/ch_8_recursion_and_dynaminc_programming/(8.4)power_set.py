@@ -26,13 +26,14 @@
 #
 ##########################################
 
-def PowerSet(s,subset,index):
-      if index == len(s):
+
+def PowerSet(s, subset, index):
+    if index == len(s):
         print(subset)
         return
-      PowerSet(s, subset + [s[index]], index + 1)
-      PowerSet(s, subset, index + 1)
+    PowerSet(s, subset + [s[index]], index + 1)
+    PowerSet(s, subset, index + 1)
 
 
 if __name__ == "__main__":
-    PowerSet([1,2],[],0)
+    PowerSet([1, 2], [], 0)

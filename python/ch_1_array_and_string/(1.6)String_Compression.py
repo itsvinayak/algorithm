@@ -6,4 +6,4 @@
 
 # String compression
 # Algorithms :
-# 
+#

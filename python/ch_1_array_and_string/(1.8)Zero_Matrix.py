@@ -5,8 +5,8 @@ def ZeroMatrix(List):
         for j in range(len(List)):
             if List[i][j] == 0:
                 row.append(i)
-                column.append(j) 
-                
+                column.append(j)
+
     for i in row:
         for j in range(len(List)):
             List[i][j] = 0
@@ -17,8 +17,6 @@ def ZeroMatrix(List):
 
     return List
 
-if __name__ == "__main__":
-    print(ZeroMatrix([[1,0,3],
-                      [4,5,6],
-                      [7,8,9]]))
 
+if __name__ == "__main__":
+    print(ZeroMatrix([[1, 0, 3], [4, 5, 6], [7, 8, 9]]))
