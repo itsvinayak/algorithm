@@ -19,7 +19,7 @@ def main():
     arr = [1, 1, 2, 3]
     to = 1
 
-    k = to + sum(arr) // 2
+    k = (to + sum(arr)) // 2
     n = len(arr)
     print(SubsetSum(arr, n, k))
 
