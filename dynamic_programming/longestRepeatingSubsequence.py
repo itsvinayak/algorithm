@@ -28,7 +28,7 @@ def longestRepeatingSubsequenceSupportDp(a, b, x, y):
 
 def longestRepeatingSubsequence(a):
     print(longestRepeatingSubsequenceSupport(a, a, len(a), len(a)))
-    print(longestRepeatingSubsequenceSupportDp(a,a,len(a),len(a)))
+    print(longestRepeatingSubsequenceSupportDp(a, a, len(a), len(a)))
 
 
 def main():
