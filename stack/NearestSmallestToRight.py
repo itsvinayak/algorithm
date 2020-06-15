@@ -1,16 +1,16 @@
 #  arr: [1 ,3 ,2 ,4]
-#  ans: [-1 ,1 ,1 ,2]
+#  ans: [-1,2,-1,-1]
 #
 #  arr: [4 ,5 ,2 ,10 ,8]
-#  ans: [-1,4,-1,2,2]
+#  ans: [2,2,-1,8,-1]
 
 
 # simple
-def NSLSimple(arr):
+def NSRSimple(arr):
     length = len(arr)
-    for i in range(0, length):
+    for i in range(length - 1, -1, -1):
         ans = -1
-        for j in range(i - 1, -1, -1):
+        for j in range(i + 1, length):
             if arr[i] > arr[j]:
                 ans = arr[j]
                 break
@@ -37,11 +37,11 @@ class Stack:
         return self.stack[-1]
 
 
-def NSLStack(arr):
+def NSRStack(arr):
     length = len(arr)
     s = Stack()
     ans = []
-    for i in range(0, length):
+    for i in range(length - 1, -1, -1):
         if s.isEmpty():
             ans.append(-1)
         else:
@@ -60,8 +60,8 @@ def NSLStack(arr):
 
 def main():
     arr = [4, 5, 2, 10, 8]
-    NSLSimple(arr)
-    print(NSLStack(arr))
+    NSRSimple(arr)
+    print(NSRStack(arr))
 
 
 if __name__ == "__main__":
