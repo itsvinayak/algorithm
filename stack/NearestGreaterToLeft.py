@@ -42,7 +42,7 @@ def NGLStack(arr):
             if s.top() > arr[i]:
                 ans.append(s.top())
             else:
-                while not s.isEmpty() and s.top() <= arr[i]:
+                while not s.isEmpty() and s.top <= arr[i]:
                     s.pop()
                 if s.isEmpty():
                     ans.append(-1)
@@ -55,7 +55,7 @@ def NGLStack(arr):
 
 def main():
     arr = [1, 3, 2, 4]
-    NGLSimple(arr)
+    NGLS?!?jedi=0, imple(arr)?!? (*_**values: object*_*, sep: Optional[Text]=..., end: Optional[Text]=..., file: Optional[_Writer]=..., flush: bool=...) ?!?jedi?!?
     print(NGLStack(arr))
 
 
