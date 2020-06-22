@@ -1,7 +1,7 @@
 # python algorithm
 
 
-[![PyPI implementation](https://img.shields.io/pypi/implementation/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+[![PyPI implementation](https://img.shields.io/pypi/implementation/ansicolortags.svg)](https://github.com/itsvinayak/python-algorithm)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](LICENSE)
 
 
