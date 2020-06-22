@@ -2,7 +2,7 @@
 
 
 [![PyPI implementation](https://img.shields.io/pypi/implementation/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](LICENSE)
 
 
 Algorithms run our universe | solve each and every query | This repository is a collection of many algorithm and data structure you will find floating in universe 🚀  | build with python 🐍
