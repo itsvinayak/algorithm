@@ -1,11 +1,15 @@
-# cosmos
+# python algorithm
 
-Algorithms run our universe | solve each and every query | Cosmos is a collection of many algorithm and data structure you will find floating in universe 🚀   | build with python 🐍
 
-### All algorithms implemented in Python (for education)
+[![PyPI implementation](https://img.shields.io/pypi/implementation/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
-These implementations are for learning purposes. They may be less efficient than the implementations in the Python standard library.
+
+Algorithms run our universe | solve each and every query | This repository is a collection of many algorithm and data structure you will find floating in universe 🚀  | build with python 🐍
+
+### All algorithms implemented in Python 
+These implementations are for learning purposes.
+They may be less efficient than the implementations in the Python standard library.
 
 ## Contribution Guidelines
-
 Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
