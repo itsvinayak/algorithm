@@ -34,20 +34,23 @@ class OldFashionedPrinter(Machine):
 
     def scan(self, document):
         """Not supported!"""
-        raise NotImplementedError('Printer cannot scan!')
+        raise NotImplementedError("Printer cannot scan!")
 
 
 class Printer:
     @abstractmethod
-    def print(self, document): pass
+    def print(self, document):
+        pass
 
 
 class Scanner:
     @abstractmethod
-    def scan(self, document): pass
+    def scan(self, document):
+        pass
 
 
 # same for Fax, etc.
+
 
 class MyPrinter(Printer):
     def print(self, document):
