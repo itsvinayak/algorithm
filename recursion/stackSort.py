@@ -23,6 +23,7 @@ class Stack:
             return
 
         temp = self.pop()
+        print(temp, " ", element)
         self.insert(element)
         self.push(temp)
 
