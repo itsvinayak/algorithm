@@ -33,7 +33,6 @@ Algorithms should:
 * have Python type hints for their input parameters and return values
 * raise Python exceptions (ValueError, etc.) on erroneous input values
 * have docstrings with clear explanations and/or URLs to source materials
-* contain doctests that test both valid and erroneous input values
 * return all calculation results instead of printing or plotting them
 
 Algorithms in this repo should not be how-to examples for existing Python packages.  Instead, they should perform internal calculations or manipulations to convert input values into different output values.  Those calculations or manipulations can use data types, classes, or functions of existing Python packages but each algorithm in this repo should add unique value.
@@ -96,3 +95,5 @@ We want your work to be readable by others; therefore, we encourage you to note 
 - Most importantly,
   - **Be consistent in the use of these guidelines when submitting.**
   - Happy coding!
+
+@itsvinayak
