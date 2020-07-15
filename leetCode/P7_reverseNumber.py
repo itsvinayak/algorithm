@@ -5,7 +5,7 @@ class Solution:
         else:
             ans = -1 * int(str(abs(x))[::-1])
 
-        if ans >= 2 ** 31 or ans <= -2 ** 31:
+        if ans >= 2 ** 31 or ans <= -(2 ** 31):
             return 0
         else:
             return ans
@@ -28,7 +28,7 @@ class Solution:
 
         ans = int(res) * -1 if neg == "Y" else int(res)
 
-        if ans >= 2 ** 31 or ans <= -2 ** 31:
+        if ans >= 2 ** 31 or ans <= -(2 ** 31):
             return 0
         else:
             return ans
