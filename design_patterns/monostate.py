@@ -1,16 +1,14 @@
 # all members are static :)
 
+
 class CEO:
-    __shared_state = {
-        'name': 'Steve',
-        'age': 55
-    }
+    __shared_state = {"name": "Steve", "age": 55}
 
     def __init__(self):
         self.__dict__ = self.__shared_state
 
     def __str__(self):
-        return f'{self.name} is {self.age} years old'
+        return f"{self.name} is {self.age} years old"
 
 
 class Monostate:
@@ -24,13 +22,14 @@ class Monostate:
 
 class CFO(Monostate):
     def __init__(self):
-        self.name = ''
+        self.name = ""
         self.money_managed = 0
 
     def __str__(self):
-        return f'{self.name} manages ${self.money_managed}bn'
+        return f"{self.name} manages ${self.money_managed}bn"
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     ceo1 = CEO()
     print(ceo1)
 
@@ -41,18 +40,18 @@ if __name__ == '__main__':
     print(ceo1)
     print(ceo2)
 
-    ceo2.name = 'Tim'
+    ceo2.name = "Tim"
 
     ceo3 = CEO()
     print(ceo1, ceo2, ceo3)
 
     cfo1 = CFO()
-    cfo1.name = 'Sheryl'
+    cfo1.name = "Sheryl"
     cfo1.money_managed = 1
 
     print(cfo1)
 
     cfo2 = CFO()
-    cfo2.name = 'Ruth'
+    cfo2.name = "Ruth"
     cfo2.money_managed = 10
-    print(cfo1, cfo2, sep='\n')
+    print(cfo1, cfo2, sep="\n")

@@ -13,7 +13,7 @@ class Point:
     #     self.y = y
 
     def __str__(self):
-        return f'x: {self.x}, y: {self.y}'
+        return f"x: {self.x}, y: {self.y}"
 
     # redeclaration won't work
     # def __init__(self, rho, theta):
@@ -45,6 +45,7 @@ class Point:
 
     factory = Factory()
 
+
 # take out factory methods to a separate class
 class PointFactory:
     @staticmethod
@@ -56,7 +57,7 @@ class PointFactory:
         return Point(rho * sin(theta), rho * cos(theta))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     p1 = Point(2, 3, CoordinateSystem.CARTESIAN)
     p2 = PointFactory.new_cartesian_point(1, 2)
     # or you can expose factory through the type

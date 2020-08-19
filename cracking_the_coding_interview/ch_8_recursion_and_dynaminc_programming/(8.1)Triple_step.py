@@ -8,10 +8,5 @@ def TripleStep(n):
         return TripleStep(n - 1) + TripleStep(n - 2) + TripleStep(n - 3)
 
 
-# dp
-def TripleStepDP(n):
-    pass
-
-
 if __name__ == "__main__":
     print(TripleStep(3))

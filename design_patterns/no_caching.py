@@ -5,7 +5,7 @@ class Point:
 
 
 def draw_point(p):
-    print('.', end='')
+    print(".", end="")
 
 
 # ^^ you are given this
@@ -33,9 +33,11 @@ class LineToPointAdapter(list):
 
     def __init__(self, line):
         self.count += 1
-        print(f'{self.count}: Generating points for line '
-              f'[{line.start.x},{line.start.y}]→'
-              f'[{line.end.x},{line.end.y}]')
+        print(
+            f"{self.count}: Generating points for line "
+            f"[{line.start.x},{line.start.y}]→"
+            f"[{line.end.x},{line.end.y}]"
+        )
 
         left = min(line.start.x, line.end.x)
         right = max(line.start.x, line.end.x)
@@ -50,8 +52,6 @@ class LineToPointAdapter(list):
                 self.append(Point(x, top))
 
 
-
-
 def draw(rcs):
     print("\n\n--- Drawing some stuff ---\n")
     for rc in rcs:
@@ -60,10 +60,8 @@ def draw(rcs):
             for p in adapter:
                 draw_point(p)
 
-if __name__ == '__main__':
-    rs = [
-        Rectangle(1, 1, 10, 10),
-        Rectangle(3, 3, 6, 6)
-    ]
+
+if __name__ == "__main__":
+    rs = [Rectangle(1, 1, 10, 10), Rectangle(3, 3, 6, 6)]
     draw(rs)
     draw(rs)
