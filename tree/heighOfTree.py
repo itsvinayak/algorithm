@@ -36,14 +36,14 @@ class binaryTree:
                 else:
                     node.right = Node(element)
 
-    def __maxDepthUtil(self,node):
+    def __maxDepthUtil(self, node):
         if node is None:
             return 0
         else:
             lDepth = self.__maxDepthUtil(node.left)
             rDepth = self.__maxDepthUtil(node.right)
 
-            return lDepth+1 if lDepth > rDepth else rDepth+1
+            return lDepth + 1 if lDepth > rDepth else rDepth + 1
 
     def maxDepth(self):
         node = self.root
@@ -51,7 +51,6 @@ class binaryTree:
 
     def __str__(self):
         return self.printInorder(self.root)
-
 
     def printInorder(self, node, traversal=""):
         """

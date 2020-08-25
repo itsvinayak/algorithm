@@ -3,7 +3,8 @@ class Car:
         self.driver = driver
 
     def drive(self):
-        print(f'Car being driven by {self.driver.name}')
+        print(f"Car being driven by {self.driver.name}")
+
 
 class CarProxy:
     def __init__(self, driver):
@@ -14,7 +15,7 @@ class CarProxy:
         if self.driver.age >= 16:
             self.car.drive()
         else:
-            print('Driver too young')
+            print("Driver too young")
 
 
 class Driver:
@@ -23,6 +24,6 @@ class Driver:
         self.age = age
 
 
-if __name__ == '__main__':
-    car = CarProxy(Driver('John', 12))
+if __name__ == "__main__":
+    car = CarProxy(Driver("John", 12))
     car.drive()
