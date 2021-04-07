@@ -1,4 +1,4 @@
-link : (link)[https://www.youtube.com/playlist?list=PLNmW52ef0uwvkul_e_wLD525jbTfMKLIJ]
+[link to video series](https://www.youtube.com/playlist?list=PLNmW52ef0uwvkul_e_wLD525jbTfMKLIJ)
 
 1. counts number of Ones in binary number
 2. rotate bits n times (circular)
