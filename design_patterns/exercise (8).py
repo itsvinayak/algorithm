@@ -21,7 +21,8 @@ class CardGame(ABC):
         self.hit(second, first)
         first_alive = first.health > 0
         second_alive = second.health > 0
-        if first_alive == second_alive: return -1
+        if first_alive == second_alive:
+            return -1
         return c1_index if first_alive else c2_index
 
     def hit(self, attacker, defender):
@@ -46,8 +47,12 @@ class Evaluate(TestCase):
         c1 = Creature(1, 2)
         c2 = Creature(1, 2)
         game = TemporaryDamageCardGame([c1, c2])
-        self.assertEqual(-1, game.combat(0, 1), 'Combat should yield -1 since nobody died.')
-        self.assertEqual(-1, game.combat(0, 1), 'Combat should yield -1 since nobody died.')
+        self.assertEqual(
+            -1, game.combat(0, 1), "Combat should yield -1 since nobody died."
+        )
+        self.assertEqual(
+            -1, game.combat(0, 1), "Combat should yield -1 since nobody died."
+        )
 
     def test_temporary_murder(self):
         c1 = Creature(1, 1)
@@ -65,7 +70,7 @@ class Evaluate(TestCase):
         c1 = Creature(1, 2)
         c2 = Creature(1, 3)
         game = PermanentDamageCardGame([c1, c2])
-        self.assertEqual(-1, game.combat(0, 1), 'Nobody should win this battle.')
+        self.assertEqual(-1, game.combat(0, 1), "Nobody should win this battle.")
         self.assertEqual(1, c1.health)
         self.assertEqual(2, c2.health)
-        self.assertEqual(1, game.combat(0, 1), 'Creature at index 1 should win this')
+        self.assertEqual(1, game.combat(0, 1), "Creature at index 1 should win this")

@@ -9,7 +9,8 @@
 # sp = D+K+c(i)
 # fp = 2D+2K+c(2j)
 # fp - sp
-# D = c(i-2j) - k ## now think 
+# D = c(i-2j) - k ## now think
+
 
 class Node:
     def __init__(self, data=None):

@@ -17,8 +17,8 @@ class LinkedList:
         previous = None
         current = self.head
         while current:
-            next_node,current.next = current.next,previous
-            previous,current = current,next_node
+            next_node, current.next = current.next, previous
+            previous, current = current, next_node
         self.head = previous
 
     def printLL(self):

@@ -63,7 +63,7 @@ def main():
     bt2.push(3)
     bt2.push(4)
     bt1.printTree()
-    print('\n')
+    print("\n")
     bt2.printTree()
     print(isIdentical(bt1.root, bt2.root))
 

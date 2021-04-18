@@ -29,7 +29,7 @@ class binaryTree:
                     node.right = Node(element)
 
     def printInorder(self):
-        print(self._printInorderUtil(self.root,""))
+        print(self._printInorderUtil(self.root, ""))
 
     def _printInorderUtil(self, node, traversal):
         """
@@ -44,7 +44,7 @@ class binaryTree:
     def height(self):
         return self._heightUtil(self.root)
 
-    def _heightUtil(self,node):
+    def _heightUtil(self, node):
         if node is None:
             return 0
 
@@ -60,7 +60,11 @@ class binaryTree:
         lh = self._heightUtil(node.left)
         lr = self._heightUtil(node.right)
 
-        if abs(lh-lr) <= 1 and self._heightBalancedUtil(node.left) and self._heightBalancedUtil(node.right):
+        if (
+            abs(lh - lr) <= 1
+            and self._heightBalancedUtil(node.left)
+            and self._heightBalancedUtil(node.right)
+        ):
             return True
         else:
             return False
@@ -79,9 +83,6 @@ def main():
     t.push(6)
     t.printInorder()
     print(t.heightBalanced())
-
-
-
 
 
 if __name__ == "__main__":
