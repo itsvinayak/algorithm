@@ -1,4 +1,4 @@
-# Write code to remove duplicates from an unsorted linked list.
+# Implement an algorithm to find if the linked list is palindrome 
 
 
 class Node:
@@ -26,15 +26,20 @@ class LinkedList:
             print(curr.data)
             curr = curr.next
 
-    def removeDups(self):
-        current = second = self.head
-        while current is not None:
-            while second.next is not None:
-                if second.next.data == current.data:
-                    second.next = second.next.next
-                else:
-                    second = second.next
-            current = second = current.next
+    def isPalindrome(self):
+      # 1 2 3 2 1
+      return self._isPalindromeUtil(self.head, False)
+
+    def _isPalindromeUtil(self,node = None,boolVal = False):
+      temp = node.data
+      if node.next is None:
+        if temp == node.data:
+          return True
+        else:
+          return False
+      else:
+        self._isPalindromeUtil(node.next)
+
 
 
 if __name__ == "__main__":
@@ -43,7 +48,4 @@ if __name__ == "__main__":
     ll.makeNode(2)
     ll.makeNode(1)
     ll.makeNode(4)
-    ll.printLinkedList()
-    ll.removeDups()
-    print("-----------------")
     ll.printLinkedList()
