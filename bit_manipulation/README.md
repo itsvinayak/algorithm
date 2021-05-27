@@ -1,3 +1,5 @@
+# Bit Manipulation
+
 [link to video series](https://www.youtube.com/playlist?list=PLNmW52ef0uwvkul_e_wLD525jbTfMKLIJ)
 
 1. counts number of Ones in binary number
@@ -9,4 +11,3 @@
 7. Two Missing Numbers
 
 ---
-
