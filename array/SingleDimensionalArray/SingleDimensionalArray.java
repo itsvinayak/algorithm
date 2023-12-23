@@ -1,7 +1,7 @@
-public class SingleDimensionArray {
+public class SingleDimensionalArray {
   int arr[] = null;
 
-  public SingleDimensionArray(int sizeOfArray) {
+  public SingleDimensionalArray(int sizeOfArray) {
     arr = new int[sizeOfArray];
     for (int i=0; i<arr.length; i++) {
       arr[i] = Integer.MIN_VALUE;
