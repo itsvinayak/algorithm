@@ -6,11 +6,11 @@
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](LICENSE)
 
 
-Algorithms run our universe | solve each and every query | This repository is a collection of many algorithm and data structure you will find floating in universe 🚀  
+Algorithms run our universe | solve every query | This repository is a collection of many algorithms and data structures you will find floating in the universe 🚀  
 
 These implementations are for learning purposes.
 
-## code :
+## Code :
 
 | **Language** 	| **Link** 	|
 |:---:	|:---:	|
